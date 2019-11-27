@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./login.css">
+    <script>
+        // function login() {
+        //     console.log(7894567891325)
+        //     var stuNum = document.getElementById("stuNum").value;
+        //     var password = document.getElementById("password").value;
+        //     var params = "stu_num=" + stuNum + "&password=" + password;
+        //     //ajax请求
+        //     var xmlHttp = new XMLHttpRequest();
+        //     xmlHttp.open("POST", "/login", true);//直接跳转处理函数
+        //     xmlHttp.send(params);
+        //     xmlHttp.onreadystatechange = function () {
+        //         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        //             console.log(xmlHttp.responseText)
+        //             if (xmlHttp.responseText == "ok") {
+        //                 location.href = "./main.html";
+        //             } else {
+        //                 location.href = "./error.html";
+        //             }
+        //
+        //         }
+        //     }
+        //
+        //
+        // }
+    </script>
+</head>
+<body>
+<div class="imgBox"></div>
+<!--action表示请求的是哪个动态文件-->
+<form action="/login" method="post">
+    <input type="text" id="stuNum" name="stuNum" placeholder="学号">
+    <!--    name值为传递给后端的值-->
+    <input type="password" id="password" name="password" placeholder="密码">
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
